@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+	<title>jquery.sharebox - demo</title>
+
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="jquery.sharebox.min.js"></script>
+	<link href="jquery.sharebox.min.css" rel="stylesheet">
+
+	<style>
+	html {
+		background:#fff;
+		color:#333;
+	}
+	hr {
+		background:transparent;
+		border-top:1px solid #ccc;
+		color:transparent;
+		height:0;
+		margin:1em 0;
+	}
+	pre, code {
+		font-size:90%;
+	}
+	.sharebox {
+		margin:1em 0;
+	}
+	</style>
+
+</head>
+<body>
+
+	<pre>&lt;div class="sharebox"&gt;&lt;/div&gt;</pre>
+	<div class="sharebox"></div>
+
+	<hr>
+
+	<pre>&lt;div class="sharebox" data-title="Custom title" data-url="http://www.example.com/"&gt;&lt;/div&gt;</pre>
+	<div class="sharebox" data-title="Custom title" data-url="http://www.example.com/"></div>
+
+	<hr>
+
+	<pre>&lt;div class="sharebox" data-services="digg facebook google+ linkedin pinterest reddit stumbleupon tumblr twitter print"&gt;&lt;/div&gt;</pre>
+	<div class="sharebox" data-services="digg facebook google+ linkedin pinterest reddit stumbleupon tumblr twitter print"></div>
+
+</body>
+</html>
