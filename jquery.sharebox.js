@@ -6,17 +6,17 @@
 
 	// jQuery plugin
 	var Self = function(options) {
-		var Defaults = Self.defaults,
+		var	Defaults = Self.defaults,
 			Services = Self.services;
 
 		this.each(function() {
-			var $this    = $(this),
-				attrs    = {
+			var	$this = $(this),
+				attrs = {
 					url      : $this.data("url"),
 					title    : $this.data("title"),
 					services : $this.data("services")
 				},
-				settings = $.extend(Defaults, attrs, options),
+				settings = $.extend({}, Defaults, attrs, options),
 				services = settings.services.split(" ");
 
 			// Container
@@ -68,7 +68,7 @@
 
 	Self.popup = function(options) {
 		var $this  = $(this),
-			url    = $this.attr("href")
+			url    = $this.attr("href"),
 			width  = $this.data("width") || 400,
 			height = $this.data("height") || 300;
 
@@ -95,7 +95,7 @@
 			width  : 720,
 			height : 320,
 			url    : function(options) {
-				return "http://digg.com/submit?url={URL}&title={TITLE}"
+				return "https://digg.com/submit?url={URL}&title={TITLE}"
 					.replace("{URL}", encodeURIComponent(options.url))
 					.replace("{TITLE}", encodeURIComponent(options.title));
 			},
@@ -106,7 +106,7 @@
 			width  : 500,
 			height : 300,
 			url    : function(options) {
-				return "http://www.facebook.com/sharer/sharer.php?u={URL}&t={TITLE}"
+				return "https://www.facebook.com/sharer/sharer.php?u={URL}&t={TITLE}"
 					.replace("{URL}", encodeURIComponent(options.url))
 					.replace("{TITLE}", encodeURIComponent(options.title));
 			},
@@ -117,7 +117,7 @@
 			width  : 500,
 			height : 460,
 			url    : function(options) {
-				return "http://plus.google.com/share?url={URL}"
+				return "https://plus.google.com/share?url={URL}"
 					.replace("{URL}", encodeURIComponent(options.url));
 			},
 			click  : Self.popup
@@ -127,7 +127,7 @@
 			width  : 500,
 			height : 400,
 			url    : function(options) {
-				return "http://www.linkedin.com/shareArticle?mini=true&url={URL}&title={TITLE}&summary=&source="
+				return "https://www.linkedin.com/shareArticle?mini=true&url={URL}&title={TITLE}&summary=&source="
 					.replace("{URL}", encodeURIComponent(options.url))
 					.replace("{TITLE}", encodeURIComponent(options.title));
 			},
@@ -138,7 +138,7 @@
 			width  : 500,
 			height : 300,
 			url    : function(options) {
-				return "http://pinterest.com/pin/create/link/?url={URL}&description={TITLE}"
+				return "https://pinterest.com/pin/create/link/?url={URL}&description={TITLE}"
 					.replace("{URL}", encodeURIComponent(options.url))
 					.replace("{TITLE}", encodeURIComponent(options.title));
 			},
@@ -149,7 +149,7 @@
 			width  : 500,
 			height : 300,
 			url    : function(options) {
-				return "http://reddit.com/submit?url={URL}&title={TITLE}"
+				return "https://reddit.com/submit?url={URL}&title={TITLE}"
 					.replace("{URL}", encodeURIComponent(options.url))
 					.replace("{TITLE}", encodeURIComponent(options.title));
 			},
@@ -160,7 +160,7 @@
 			width  : 500,
 			height : 300,
 			url    : function(options) {
-				return "http://www.stumbleupon.com/submit?url={URL}&title={TITLE}"
+				return "https://www.stumbleupon.com/submit?url={URL}&title={TITLE}"
 					.replace("{URL}", encodeURIComponent(options.url))
 					.replace("{TITLE}", encodeURIComponent(options.title));
 			},
@@ -171,7 +171,7 @@
 			width  : 500,
 			height : 300,
 			url    : function(options) {
-				return "http://www.tumblr.com/share/link?url={URL}&name={TITLE}&description="
+				return "https://www.tumblr.com/share/link?url={URL}&name={TITLE}&description="
 					.replace("{URL}", encodeURIComponent(options.url))
 					.replace("{TITLE}", encodeURIComponent(options.title));
 			},
@@ -182,7 +182,7 @@
 			width  : 500,
 			height : 300,
 			url    : function(options) {
-				return "http://twitter.com/intent/tweet?url={URL}&text={TITLE}"
+				return "https://twitter.com/intent/tweet?url={URL}&text={TITLE}"
 					.replace("{URL}", encodeURIComponent(options.url))
 					.replace("{TITLE}", encodeURIComponent(options.title));
 			},
