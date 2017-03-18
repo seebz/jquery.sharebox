@@ -17,7 +17,7 @@
 					services : $this.data("services")
 				},
 				settings = $.extend({}, Defaults, attrs, options),
-				services = settings.services.split(" ");
+				services = settings.services.match(/\S+/g);
 
 			// Container
 			var $ul = $this.find("ul.sharebox-buttons");
