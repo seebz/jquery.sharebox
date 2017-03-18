@@ -8,10 +8,11 @@ ul.sharebox-buttons li {
 	vertical-align:middle;
 }
 ul.sharebox-buttons li {
-	margin-left:0.5em;
-}
-ul.sharebox-buttons li:first-child {
 	margin-left:0;
+	margin-right:0.5em;
+}
+ul.sharebox-buttons li:last-child {
+	margin-right:0;
 }
 ul.sharebox-buttons li a {
 	background:#efefef;
