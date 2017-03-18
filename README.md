@@ -4,7 +4,7 @@
 This [jQuery](https://jquery.com/) plugin allow you to easily add a
  *sharebox* (list of social buttons) on your website.
 
-[![Screenshot](screenshot.png?raw=true)](https://rawgit.com/Seebz/jquery.sharebox/master/demo.html "View live demo")
+![Screenshot](screenshot.png?raw=true)
 
 
 
@@ -14,12 +14,14 @@ This [jQuery](https://jquery.com/) plugin allow you to easily add a
 
 Simply load jQuery and the provided files from the right place:
 
-	<!-- jQuery -->
-	<script src="path/to/jquery.min.js"></script>
+```html
+<!-- jQuery -->
+<script src="path/to/jquery.min.js"></script>
 
-	<!-- jquery.sharebox -->
-	<script src="path/to/jquery.sharebox.min.js"></script>
-	<link href="path/to/jquery.sharebox.min.css" rel="stylesheet">
+<!-- jquery.sharebox -->
+<script src="path/to/jquery.sharebox.min.js"></script>
+<link href="path/to/jquery.sharebox.min.css" rel="stylesheet">
+```
 
 
 Note: The optional `jquery.sharebox.icons.css` stylesheet contains all
@@ -30,19 +32,23 @@ Note: The optional `jquery.sharebox.icons.css` stylesheet contains all
 
 **jquery.sharebox** will automatically load any `.sharebox` elements:
 
-	<!-- .sharebox elements are automatically loaded -->
-	<div class="sharebox"></div>
+```html
+<!-- .sharebox elements are automatically loaded -->
+<div class="sharebox"></div>
+```
 
 
 Off course, you can also initialize **jquery.sharebox** with the element
  you want:
 
-	<div id="my-sharebox"></div>
-	<script>
-	jQuery(document).ready(function() {
-		jQuery("#my-sharebox").sharebox();
-	});
-	</script>
+```html
+<div id="my-sharebox"></div>
+<script>
+jQuery(document).ready(function() {
+	jQuery("#my-sharebox").sharebox();
+});
+</script>
+```
 
 
 ### Configuration
@@ -56,8 +62,8 @@ Off course, you can also initialize **jquery.sharebox** with the element
 | url      | The URL to share                 | Document's URL           |
 | title    | The name of the element to share | Document's title         |
 | services | The services you want to use *   | facebook twitter google+ |
-| -------- | -------------------------------- | ------------------------ |
-* Separated by space
+
+ * Separated by space
 
 
 #### The HTML way
@@ -65,12 +71,14 @@ Off course, you can also initialize **jquery.sharebox** with the element
 With **jquery.sharebox**, you can easily set options using
  [HTML5 custom data attributes](https://www.w3.org/TR/2010/WD-html5-20101019/elements.html#embedding-custom-non-visible-data-with-the-data-attributes).
 
-	<!-- .sharebox elements are automatically loaded -->
-	<div class="sharebox"
-	     data-url="http://www.example.com/"
-	     data-title="My awesome title"
-	     data-services="facebook twitter google+ print"
-	     ></div>
+```html
+<!-- .sharebox elements are automatically loaded -->
+<div class="sharebox"
+     data-url="http://www.example.com/"
+     data-title="My awesome title"
+     data-services="facebook twitter google+ print"
+     ></div>
+```
 
 
 #### The javascript way
@@ -78,17 +86,18 @@ With **jquery.sharebox**, you can easily set options using
 The **jquery.sharebox** plugin allows you to set options by passing an object
  on initialization:
 
-	<div id="my-sharebox"></div>
-	<script>
-	jQuery(document).ready(function() {
-		jQuery("#my-sharebox").sharebox({
-			url      : "http://www.example.com/",
-			title    : "My awesome title",
-			services : "facebook twitter google+ print"
-		});
+```html
+<div id="my-sharebox"></div>
+<script>
+jQuery(document).ready(function() {
+	jQuery("#my-sharebox").sharebox({
+		url      : "http://www.example.com/",
+		title    : "My awesome title",
+		services : "facebook twitter google+ print"
 	});
-	</script>
-
+});
+</script>
+```
 
 
 ## License
