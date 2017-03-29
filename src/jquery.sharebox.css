@@ -64,6 +64,9 @@ li.share-linkedin a > span {
 li.share-pinterest a > span {
 	background-image:url(icons/pinterest.png);
 }
+li.share-pocket a > span {
+	background-image:url(icons/pocket.png);
+}
 li.share-reddit a > span {
 	background-image:url(icons/reddit.png);
 }

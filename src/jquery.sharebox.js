@@ -144,6 +144,17 @@
 			},
 			click  : Self.popup
 		},
+		pocket: {
+			label  : "Pocket",
+			width  : null,
+			height : null,
+			url    : function(options) {
+				return "https://getpocket.com/save?url={URL}&title={TITLE}"
+					.replace("{URL}", encodeURIComponent(options.url))
+					.replace("{TITLE}", encodeURIComponent(options.title));
+			},
+			click  : Self.popup
+		},
 		reddit: {
 			label  : "Reddit",
 			width  : 500,
