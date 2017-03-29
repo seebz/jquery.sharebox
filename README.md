@@ -7,6 +7,7 @@ This [jQuery](https://jquery.com/) plugin allow you to easily add a
 ![Screenshot](screenshot.png?raw=true)
 
 
+
 ## Setup
 
 Simply load jQuery and the provided files from the right place:
@@ -23,6 +24,7 @@ Simply load jQuery and the provided files from the right place:
 
 Note: The optional `jquery.sharebox.icons.css` stylesheet contains all
  icons in the [data URI scheme](https://en.wikipedia.org/wiki/Data_URI_scheme).
+
 
 
 ## Usage
@@ -48,6 +50,7 @@ jQuery(document).ready(function() {
 ```
 
 
+
 ## Configuration
 
 ### Options
@@ -56,11 +59,11 @@ jQuery(document).ready(function() {
 
 | Name     | Description                      | Default value            |
 | -------- | -------------------------------- | ------------------------ |
-| url      | The URL to share                 | Document's URL           |
-| title    | The name of the element to share | Document's title         |
+| url      | The URL to share                 | URL of the document      |
+| title    | The name of the element to share | Title of the document    |
 | services | The services you want to use *   | facebook twitter google+ |
 
- * Separated by space
+<small>_\* Separated by space_</small>
 
 
 ### The HTML way
@@ -95,6 +98,25 @@ jQuery(document).ready(function() {
 });
 </script>
 ```
+
+
+
+## Services
+
+By default, **jquery.sharebox** includes the following services :
+
+* ![Digg](src/icons/digg.png?raw=true) **digg** - Share on [Digg](https://digg.com/)
+* ![Facebook](src/icons/facebook.png?raw=true) **facebook** - Share on [Facebook](https://www.facebook.com/)
+* ![Google+](src/icons/google-plus.png?raw=true) **google+** - Share on [Google+](https://plus.google.com/)
+* ![LinkedIn](src/icons/linkedin.png?raw=true) **linkedin** - Share on [LinkedIn](https://www.linkedin.com/)
+* ![Pinterest](src/icons/pinterest.png?raw=true) **pinterest** - Share on [Pinterest](https://pinterest.com/)
+* ![Pocket](src/icons/pocket.png?raw=true) **pocket** - Share on [Pocket](https://getpocket.com/)
+* ![Reddit](src/icons/reddit.png?raw=true) **reddit** - Share on [Reddit](https://reddit.com/)
+* ![StumbleUpon](src/icons/stumbleupon.png?raw=true) **stumbleupon** - Share on [StumbleUpon](https://www.stumbleupon.com/)
+* ![Tumblr](src/icons/tumblr.png?raw=true) **tumblr** - Share on [Tumblr](https://www.tumblr.com/)
+* ![Twitter](src/icons/twitter.png?raw=true) **twitter** - Share on [Twitter](https://twitter.com/)
+* ![Print](src/icons/print.png?raw=true) **print** - Open the _Print Dialog_
+
 
 
 ## License
