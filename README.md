@@ -7,10 +7,7 @@ This [jQuery](https://jquery.com/) plugin allow you to easily add a
 ![Screenshot](screenshot.png?raw=true)
 
 
-
-## Getting started
-
-### Setup
+## Setup
 
 Simply load jQuery and the provided files from the right place:
 
@@ -28,7 +25,7 @@ Note: The optional `jquery.sharebox.icons.css` stylesheet contains all
  icons in the [data URI scheme](https://en.wikipedia.org/wiki/Data_URI_scheme).
 
 
-### Usage
+## Usage
 
 **jquery.sharebox** will automatically load any `.sharebox` elements:
 
@@ -51,9 +48,9 @@ jQuery(document).ready(function() {
 ```
 
 
-### Configuration
+## Configuration
 
-#### Options
+### Options
 
 **jquery.sharebox** accepts the following options:
 
@@ -66,7 +63,7 @@ jQuery(document).ready(function() {
  * Separated by space
 
 
-#### The HTML way
+### The HTML way
 
 With **jquery.sharebox**, you can easily set options using
  [HTML5 custom data attributes](https://www.w3.org/TR/2010/WD-html5-20101019/elements.html#embedding-custom-non-visible-data-with-the-data-attributes).
@@ -81,7 +78,7 @@ With **jquery.sharebox**, you can easily set options using
 ```
 
 
-#### The javascript way
+### The javascript way
 
 The **jquery.sharebox** plugin allows you to set options by passing an object
  on initialization:
